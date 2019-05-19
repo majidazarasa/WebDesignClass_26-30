@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        #myImage{
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        #myImage:hover{
+            opacity: 0.7;
+        }
+        .modal{
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 80%;
+            height: 80%;
+            overflow: auto;
+            /* background-color: rgba(0,0,0,0.9); */
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <img id="myImage" src="img_mountains_wide.jpg" alt="mountains">
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+        <div id="caption"></div>
+    </div>
+</body>
+</html>
