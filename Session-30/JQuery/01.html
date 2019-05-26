@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            // var p = document.getElementById("id02").style.display = "none";
+            // $("#id02").css("display", "none");
+            // $("span").css("display", "none");
+        });
+        function showDiv(){
+            $("div#description").show();
+        }
+        function hideDiv(){
+            $("div#description").hide();
+        }
+        function removeDiv(){
+            $("div#description").remove();
+        }
+    </script>
+</head>
+
+<body>
+    <p id="id01">Hello World! 01</p>
+    <p id="id02">Hello World! 02</p>
+    <p id="id03">Hello World! 03</p>
+    <div id="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur dolorum necessitatibus eum omnis esse accusantium, aspernatur numquam nisi sunt officiis impedit soluta repudiandae ratione? Rerum expedita iusto enim? Quia, quaerat!
+    </div><br>
+    <button onclick="showDiv();">show</button>
+    <button onclick="hideDiv();">hide</button>
+    <button onclick="removeDiv();">remove</button>
+</body>
+
+</html>

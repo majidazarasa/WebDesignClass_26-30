@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet"
+        href="https://cdn.rawgit.com/rastikerdar/shabnam-font/v4.0.0/dist/font-face.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    لطفا برای ورود بر روی دکمه زیر کلیک کنید
+    <br>
+    <div id="login">
+        <button id="loginbtn" onclick="login();">ورود</button>
+    </div>
+    <div id="id01" class="modal">
+        <div class="imgcontainer">
+            <span class="close" title="بستن پنجره" onclick="closeLoginPage();">&times;</span>
+            <img src="avatar.png" alt="avatar" class="avatar">    
+        </div>
+        <form action="" class="modal-content">
+            <div class="container">
+                <label for="uname">نام کاربری</label>
+                <input type="text" name="uname" placeholder="نام کاربری را وارد کنید..." required>
+
+                <label for="psw">رمز ورود</label>
+                <input type="text" name="psw" placeholder="رمز ورود را وارد کنید..." required>
+
+                <button type="submit">ورود</button>
+                <input type="checkbox" checked name="remember">مرا به خاطر بسپار
+
+                <div class="container">
+                    <button type="button" class="cancelbtn" onclick="closeLoginPage();">لغو</button><br>
+                    <span class="psw">فراموشی <a href="#">رمز ورود؟</a> </span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
